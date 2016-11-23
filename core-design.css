@@ -1,0 +1,71 @@
+* {
+	padding:0px;
+	margin:0px;
+}
+
+div{
+	display: inherit;
+}
+
+.shadow-bottom-5{
+	-webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.25);
+	box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.25);
+}
+
+.shadow-left-5{
+	-webkit-box-shadow: -5px 0px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: -5px 0px 5px 0px rgba(0,0,0,0.25);
+     box-shadow: -5px 0px 5px 0px rgba(0,0,0,0.25);
+}
+
+.shadow-right-5{
+	-webkit-box-shadow: 5px 0px 5px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 5px 0px 5px 0px rgba(0,0,0,0.25);
+    box-shadow: 5px 0px 5px 0px rgba(0,0,0,0.25);
+}
+
+.float-right{
+	float:right;
+}
+
+.float-left{
+	float:left;
+}
+
+div.main-header{
+    width: 100%;
+    height: 100px;
+    background-color: white;
+}
+
+div.main-header #logo{
+	background-color: #159D1A;
+	margin: 14px;
+	width: 160px;
+	height: 72px;
+	display: inline-block;
+}
+
+div.main-header #before-login{
+	display: inline-block;
+}
+
+button.regular{
+
+}
+
+#before-login button.sign-up{
+
+}
+
+div.main-header #usr-info{
+
+}
+
+div#body-homepage{
+	margin: 0px auto;
+	width: 992px;
+	display: block;
+	height: 100%;
+}
