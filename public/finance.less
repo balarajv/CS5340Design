@@ -1,0 +1,146 @@
+@body-bc: #F1F1F1;
+@hp-blocks-bc: #72DB8C; 
+@hp-blocks-hbc: #7CF49A;
+@main-header-bc: white;
+@theme-bc: #159D1A;
+@sub-theme-bc: #1376d7;
+@btn-prm-bc: @theme-bc;
+@btn-sec-bc: #5A6264;
+@base-half-dim: 4px;
+@base-dim: 8px;
+@main-header-height:100px;
+
+@base-margin: 14px;
+@2-base-margin: 28px;
+@header-height: 100px;
+@header-plus-margin: 128px;
+@left-panel-920: 240px;
+@lp-bch: #1167bb;
+@lp-bc: #1376d7;
+@lp-tc: #9c9c9c;
+@sp-tc: #333;
+
+
+#body-finance{	
+	display: block;
+    min-height: ~'calc(100% - @{header-plus-margin})';
+    min-height: 400px;
+    margin: 14px 14px;
+}
+.left-panel{
+	height: auto;
+    width: 30%;
+    background-color: white;
+    display: inline-block;
+    float: left
+}
+
+.right-panel{
+	height: 100%;
+    margin-left: ~'calc(30% + @{base-margin})';
+    background-color: white;
+}
+
+.left-panel ul{
+	color: @lp-tc;
+	font-family: "Open Sans", "Helvetica Neue", "Helvetica", "Arial", "sans-serif";
+	position: relative;
+}
+
+.left-panel ul li{
+	list-style-type: none;
+	padding: 14px;
+	border-bottom: 1px solid #333;
+	clear: both;
+}
+
+.left-panel ul li:last-child{
+	border-bottom: none;	
+}
+
+.left-panel ul li:hover{
+	cursor: pointer;
+}
+
+.left-panel ul li.selected:hover{
+	background-color: @lp-bch;
+	color: #fff;
+}
+
+.left-panel ul li.selected{
+	background-color: @lp-bc;	
+	color:#fff;
+}
+
+.left-panel .left-pnl-icon{
+	color: @btn-sec-bc;
+}
+
+.left-panel ul li i{
+	position: absolute;
+	right: 0px;
+	color:@lp-bch;
+	font-size: 14px;
+	right:14px;
+}
+
+label{
+	display: block;
+	padding: 7px;
+}
+
+label span{
+	display: inline-block;
+	width: 30%;
+}
+
+input {
+  max-width: 300px;
+  min-width: 260px;
+  width: 60%;
+  border: 1px solid @lp-tc;
+  height: 25px;
+  border-radius: 4px;
+  padding: 4px;
+
+}
+
+form {
+    padding: 14px;
+    color: @sp-tc;
+}
+
+.form-heading{
+	font-weight: bold;
+	margin: 7px;
+}
+
+
+@media (max-width: 920px){
+			.left-panel{
+				width: @left-panel-920;
+			}
+			.right-panel{
+				 margin-left: ~'calc(@{base-margin} + @{left-panel-920})';
+			}
+			
+		}
+
+@media (max-width: 860px){
+	label span{
+		display: block;
+		width:auto;
+	}
+}
+
+@media (max-width: 660px){
+	.left-panel ul{
+		display: none;
+	}
+	.left-panel i{
+		display: inline;
+	}
+	.right-panel{
+		margin-left: 30px;
+	}
+}

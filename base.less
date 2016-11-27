@@ -1,3 +1,15 @@
+@body-bc: #F1F1F1;
+@hp-blocks-bc: red;
+@hp-blocks-hbc: red;
+@main-header-bc: white;
+@theme-bc: #159D1A;
+@btn-prm-bc: #159D1A;
+@btn-sec-bc: #333;
+@base-half-dim: 4px;
+@base-dim: 8px;
+
+
+
 * {
 	padding:0px;
 	margin:0px;
@@ -35,7 +47,7 @@ html,body{
 	display: inline-block;
 	width:200px;
 	height:200px;
-	background-color: red;
+	background-color: @hp-blocks-bc;
 	clear: both;
 	margin:14px;
 }
@@ -58,12 +70,12 @@ html,body{
 div.main-header{
     width: 100%;
     height: 100px;
-    background-color: white;
+    background-color: @main-header-bc;
     z-index: 100;
 }
 
 div.main-header #logo{
-	background-color: #159D1A;
+	background-color: @theme-bc;
 	margin: 14px;
 	width: 160px;
 	height: 72px;
@@ -93,7 +105,9 @@ div#body-homepage{
 }
 
 .btn-prm{
-
+	background-color: #159D1A;
+	padding:5px;
+	color:white;
 }
 
 .btn-prm:hover{
